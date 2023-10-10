@@ -1,0 +1,98 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgb(224, 184, 247);
+  background: radial-gradient(
+    circle,
+    rgba(224, 184, 247, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@media (min-width: 992px) {
+  #cover-logo {
+    transform: scale(1.5);
+  }
+  #col-ux {
+    transform: translate(100px, -50px);
+  }
+}
+
+@media (min-width: 1440px) {
+  #col-ux {
+    transform: translate(100px, -100px);
+  }
+}
+
+@media (min-width: 1920px) {
+  #col-ux {
+    transform: translate(100px, -350px);
+  }
+}
+
+#oc-home {
+  animation: intro 1s ease-out;
+}
+
+#col-ux {
+  animation: intro-2 1s ease-out;
+}
+
+@keyframes intro-2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+    transform: scale(2);
+  }
+  to {
+    opacity: 1;
+  }
+}
