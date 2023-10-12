@@ -3,31 +3,58 @@ import { useState } from "react";
 const Art = () => {
   const allArts = [
     {
-      src: "/src/assets/post-ex.png",
-    },
-    {
       src: "/src/assets/oc-home.png",
     },
     {
-      src: "/src/assets/ochomesketch.png",
+      src: "/src/assets/art-2.png",
     },
     {
-      src: "/src/assets/logo.png",
+      src: "/src/assets/art-3.png",
     },
     {
-      src: "/src/assets/post-ex.png",
+      src: "/src/assets/art-4.png",
+    },
+    {
+      src: "/src/assets/art-5.png",
+    },
+    {
+      src: "/src/assets/art-6.jpg",
+    },
+    {
+      src: "/src/assets/art-7.jpg",
+    },
+    {
+      src: "/src/assets/art-8.png",
+    },
+    {
+      src: "/src/assets/art-9.png",
+    },
+    {
+      src: "/src/assets/art-10.png",
+    },
+    {
+      src: "/src/assets/art-11.png",
     },
   ];
 
   const dipArts = [
     {
-      src: "/src/assets/post-ex.png",
+      src: "/src/assets/dp-1.png",
     },
     {
-      src: "/src/assets/oc-home.png",
+      src: "/src/assets/dp-2.png",
     },
     {
-      src: "/src/assets/ochomesketch.png",
+      src: "/src/assets/dp-3.png",
+    },
+    {
+      src: "/src/assets/dp-4.png",
+    },
+    {
+      src: "/src/assets/dp-5.png",
+    },
+    {
+      src: "/src/assets/dp-6.png",
     },
   ];
 
@@ -35,8 +62,9 @@ const Art = () => {
 
   return (
     <div className="container-fluid p-0">
-      <div className="container-fluid p-0 mt-2 bg-light mh-100">
+      <div className="container-fluid p-0 mt-2 bg-light mh-100 pt-4">
         <h1 className="py-5">My Art</h1>
+        <p className="pb-5 fs-5">A small sample of my work</p>
         <div className="container-fluid">
           <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1">
             {allArts.map((art) => {

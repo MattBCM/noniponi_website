@@ -4,13 +4,13 @@ import { useState } from "react";
 const HomePage = () => {
   const latestArts = [
     {
-      src: "/src/assets/post-ex.png",
+      src: "/src/assets/art-12.png",
     },
     {
-      src: "/src/assets/post-ex.png",
+      src: "/src/assets/art-13.png",
     },
     {
-      src: "/src/assets/post-ex.png",
+      src: "/src/assets/art-14.png",
     },
   ];
 
@@ -29,7 +29,10 @@ const HomePage = () => {
         data-bs-target="#imgmodal"
         style={{ cursor: "pointer" }}
       >
-        <img src={latestArts[i].src} alt="" className="img-fluid rounded" />
+        <div
+          className="art-col "
+          style={{ backgroundImage: `url(${latestArts[i].src})` }}
+        ></div>
       </div>
     );
   }
