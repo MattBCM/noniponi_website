@@ -1,25 +1,58 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
 const NavBar = () => {
+  const [artnav, setArtNav] = useState("nav-item");
+  const [tosnav, setTOSNav] = useState("nav-item");
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div className="container-fluid d-flex justify-content-center-lg flex-column flex-lg-row">
         <div className="container collapse navbar-collapse" id="navbarToggler1">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a href="#" className="nav-link active">
-                My Art
-              </a>
+          <ul className="navbar-nav fs-5">
+            <li className={artnav}>
+              <Link to="/art">
+                <a
+                  href="#"
+                  className="nav-link artnav"
+                  onClick={() => {
+                    setArtNav("nav-item active");
+                    setTOSNav("nav-item");
+                  }}
+                >
+                  My Art
+                </a>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link active">
-                Commissions TOS
-              </a>
+            <li className={tosnav}>
+              <Link to="/tos">
+                <a
+                  href="#"
+                  className="nav-link tosnav"
+                  onClick={() => {
+                    setArtNav("nav-item");
+                    setTOSNav("nav-item active");
+                  }}
+                >
+                  Commissions TOS
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="container">
-          <a className="navbar-brand" href="#">
-            <img src="src/assets/logo.png" alt="" width="100" />
-          </a>
+          <Link to="/">
+            <a
+              className="navbar-brand"
+              href="#"
+              onClick={() => {
+                setArtNav("nav-item");
+                setTOSNav("nav-item");
+              }}
+            >
+              <img src="src/assets/logo.png" alt="" width="100" />
+            </a>
+          </Link>
         </div>
         <div className="container">
           <div className="collapse navbar-collapse justify-content-end">
@@ -63,19 +96,23 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse container-fluid d-lg-none" id="navcollapse">
-          <ul className="navbar-nav pt-3">
+          <ul className="navbar-nav pt-3 fs-5">
             <li className="nav-item">
-              <a href="" className="nav-link">
-                My Art
-              </a>
+              <Link to="/art">
+                <a href="" className="nav-link">
+                  My Art
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="nav-link">
-                Commissions TOS
-              </a>
+              <Link to="/tos">
+                <a href="" className="nav-link">
+                  Commissions TOS
+                </a>
+              </Link>
             </li>
             <li className="d-flex flex-row justify-content-center pt-3">
               <a
