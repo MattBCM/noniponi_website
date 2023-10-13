@@ -22,7 +22,7 @@ function App() {
   ]);
 
   return (
-    <div className="container-fluid pt-5 pt-lg-0 p-0 overflow-hidden position-relative">
+    <div className="container-fluid pt-lg-0 p-0 overflow-hidden position-relative">
       <NavBar />
       {element}
     </div>

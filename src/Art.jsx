@@ -1,71 +1,100 @@
 import { useState } from "react";
+import ochome from "./assets/oc-home.png";
+import Art2 from "./assets/art-2.png";
+import Art3 from "./assets/art-3.png";
+import Art4 from "./assets/art-4.png";
+import Art5 from "./assets/art-5.png";
+import Art6 from "./assets/art-6.jpg";
+import Art7 from "./assets/art-7.jpg";
+import Art8 from "./assets/art-8.png";
+import Art9 from "./assets/art-9.png";
+import Art10 from "./assets/art-10.png";
+import Art11 from "./assets/art-11.png";
+import Art12 from "./assets/art-12.png";
+import Art13 from "./assets/art-13.png";
+import Art14 from "./assets/art-14.png";
+import DP1 from "./assets/dp-1.png";
+import DP2 from "./assets/dp-2.png";
+import DP3 from "./assets/dp-3.png";
+import DP4 from "./assets/dp-4.png";
+import DP5 from "./assets/dp-5.png";
+import DP6 from "./assets/dp-6.png";
 
 const Art = () => {
   const allArts = [
     {
-      src: "/src/assets/oc-home.png",
+      src: ochome,
     },
     {
-      src: "/src/assets/art-2.png",
+      src: Art2,
     },
     {
-      src: "/src/assets/art-3.png",
+      src: Art3,
     },
     {
-      src: "/src/assets/art-4.png",
+      src: Art4,
     },
     {
-      src: "/src/assets/art-5.png",
+      src: Art5,
     },
     {
-      src: "/src/assets/art-6.jpg",
+      src: Art6,
     },
     {
-      src: "/src/assets/art-7.jpg",
+      src: Art7,
     },
     {
-      src: "/src/assets/art-8.png",
+      src: Art8,
     },
     {
-      src: "/src/assets/art-9.png",
+      src: Art9,
     },
     {
-      src: "/src/assets/art-10.png",
+      src: Art10,
     },
     {
-      src: "/src/assets/art-11.png",
+      src: Art11,
+    },
+    {
+      src: Art12,
+    },
+    {
+      src: Art13,
+    },
+    {
+      src: Art14,
     },
   ];
 
   const dipArts = [
     {
-      src: "/src/assets/dp-1.png",
+      src: DP1,
     },
     {
-      src: "/src/assets/dp-2.png",
+      src: DP2,
     },
     {
-      src: "/src/assets/dp-3.png",
+      src: DP3,
     },
     {
-      src: "/src/assets/dp-4.png",
+      src: DP4,
     },
     {
-      src: "/src/assets/dp-5.png",
+      src: DP5,
     },
     {
-      src: "/src/assets/dp-6.png",
+      src: DP6,
     },
   ];
 
   const [currArt, setCurrentArt] = useState("");
 
   return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid p-0 pt-5">
       <div className="container-fluid p-0 mt-2 bg-light mh-100 pt-4">
-        <h1 className="py-5">My Art</h1>
-        <p className="pb-5 fs-5">A small sample of my work</p>
-        <div className="container-fluid">
+        <h1 className="pt-5 mt-lg-0 mt-5">My Art</h1>
+        <p className="pb-5 fs-5 pt-2">A small sample of my work</p>
+        <div className="container-fluid pt-3">
           <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1">
             {allArts.map((art) => {
               return (

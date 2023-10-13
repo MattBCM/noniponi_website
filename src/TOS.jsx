@@ -1,10 +1,20 @@
+import TOSLine from "./assets/tos-line.png";
+import TOSSketch from "./assets/tos-sketch.png";
+import TOSColor from "./assets/tos-color.png";
+import TOSFullscale from "./assets/tos-fullscale.png";
+
 const TOS = () => {
   return (
-    <div className="container-fluid mt-2 bg-light min-vh-100">
-      {/*<div className="alert alert-info mt-4 pt-lg-4 pt-5" role="alert">
+    <div className="container-fluid mt-2 bg-light min-vh-100 p-5">
+      {/* WHEN COMMISSIONS ARE CLOSED */}
+      <div className="alert alert-info mt-lg-4 mt-5 pt-lg-4 pt-5" role="alert">
         Commissions are <strong>CLOSED</strong> <br />
         Thank you for checking me out! Commissions will open in the future!
-  </div> */}
+      </div>
+      {/*
+
+      // WHEN COMMISSIONS ARE OPENED
+
       <div className="container-fluid w-100 tos-container pt-4">
         <h1 className="mt-4 pt-lg-4 pt-5">Welcome</h1>
         <p className="fs-5">
@@ -262,32 +272,21 @@ const TOS = () => {
             <tbody>
               <tr>
                 <td>
-                  <img
-                    src="/src/assets/tos-sketch.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                  <img src={TOSSketch} alt="" className="img-fluid" />
                 </td>
                 <td>
-                  <img
-                    src="/src/assets/tos-line.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                  <img src={TOSLine} alt="" className="img-fluid" />
                 </td>
                 <td>
-                  <img
-                    src="/src/assets/tos-color.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                  <img src={TOSColor} alt="" className="img-fluid" />
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <img src="/src/assets/tos-fullscale.png" alt="" className="img-fluid" />
+        <img src={TOSFullscale} alt="" className="img-fluid" />
       </div>
+              */}
     </div>
   );
 };

@@ -54,7 +54,7 @@
     transform: scale(1.5);
   }
   #col-ux {
-    transform: translate(100px, -50px);
+    transform: translate(100px, 0px);
   }
   .tos-container {
     width: 75% !important;
@@ -63,18 +63,14 @@
 
 @media (min-width: 1440px) {
   #col-ux {
-    transform: translate(100px, -100px);
+    transform: translate(100px, 0px);
   }
 }
 
 @media (min-width: 1920px) {
   #col-ux {
-    transform: translate(100px, -350px);
+    transform: translate(100px, 0px);
   }
-}
-
-#oc-home {
-  animation: intro 1s ease-out;
 }
 
 #col-ux {
@@ -126,4 +122,10 @@
 
 .navbar {
   box-shadow: 0px 1px 10px #999;
+}
+
+.ochome {
+  width: 165%;
+  margin-left: -20vw;
+  animation: intro 1s ease-out;
 }

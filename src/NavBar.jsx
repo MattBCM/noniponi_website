@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import logo from "./assets/logo.png";
+import insta from "./assets/insta.svg";
+import twitter from "./assets/twitter.svg";
+import webtoon from "./assets/webtoon.svg";
 
 const NavBar = () => {
   const [artnav, setArtNav] = useState("nav-item");
@@ -43,14 +47,14 @@ const NavBar = () => {
         <div className="container">
           <Link to="/">
             <a
-              className="navbar-brand"
+              className="navbar-brand mx-auto"
               href="#"
               onClick={() => {
                 setArtNav("nav-item");
                 setTOSNav("nav-item");
               }}
             >
-              <img src="src/assets/logo.png" alt="" width="100" />
+              <img src={logo} alt="" width="100" />
             </a>
           </Link>
         </div>
@@ -63,7 +67,7 @@ const NavBar = () => {
                   className="nav-link"
                   target="_blank"
                 >
-                  <img src="/src/assets/insta.svg" alt="" width="30" />
+                  <img src={insta} alt="" width="30" />
                 </a>
               </li>
               <li className="nav-item">
@@ -72,7 +76,7 @@ const NavBar = () => {
                   className="nav-link"
                   target="_blank"
                 >
-                  <img src="/src/assets/twitter.svg" alt="" width="30" />
+                  <img src={twitter} alt="" width="30" />
                 </a>
               </li>
               <li className="nav-item">
@@ -81,14 +85,14 @@ const NavBar = () => {
                   className="nav-link"
                   target="_blank"
                 >
-                  <img src="/src/assets/webtoon.svg" alt="" width="30" />
+                  <img src={webtoon} alt="" width="30" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <button
-          className="navbar-toggler mt-3 me-3 collapsed"
+          className="navbar-toggler mt-3 collapsed"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navcollapse"
@@ -120,21 +124,21 @@ const NavBar = () => {
                 className="nav-link px-3"
                 target="_blank"
               >
-                <img src="/src/assets/insta.svg" alt="" width="30" />
+                <img src={insta} alt="" width="30" />
               </a>
               <a
                 href="https://twitter.com/_noniponi_"
                 className="nav-link px-3"
                 target="_blank"
               >
-                <img src="/src/assets/twitter.svg" alt="" width="30" />
+                <img src={twitter} alt="" width="30" />
               </a>
               <a
                 href="https://www.webtoons.com/en/creator/noniponi"
                 className="nav-link px-3"
                 target="_blank"
               >
-                <img src="/src/assets/webtoon.svg" alt="" width="30" />
+                <img src={webtoon} alt="" width="30" />
               </a>
             </li>
           </ul>
