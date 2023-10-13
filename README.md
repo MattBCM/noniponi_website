@@ -1,8 +1,17 @@
-# React + Vite
+# NoniPoni's Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./src/assets/logo.png" />
 
-Currently, two official plugins are available:
+An art gallery site for noniponi. This was a hobby project to demonstrate my skills with React and Bootstrap
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Video Walkthrough
+
+Here's a walkthrough of the website:
+
+<img src='https://github.com/MattBCM/noniponi_website/blob/master/src/assets/noniponi_gif.gif' title='Video Walkthrough' width='100%' alt='Video Walkthrough' />
+
+## Demo
+
+You can try it at <a href="https://noniponi.art" >noniponi.art</a>
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with OBS
