@@ -96,7 +96,7 @@ const Art = () => {
         <p className="pb-5 fs-5 pt-2">A small sample of my work</p>
         <div className="container-fluid pt-3">
           <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1">
-            {allArts.map((art) => {
+            {allArts.map((art, index) => {
               return (
                 <div
                   className="col pb-3"
@@ -105,6 +105,7 @@ const Art = () => {
                   }}
                   data-bs-toggle="modal"
                   data-bs-target="#imgmodal"
+                  key={`a-${index}`}
                 >
                   <div
                     className="art-col "
@@ -142,7 +143,7 @@ const Art = () => {
         <h1 className="py-5">Dip Pen Art</h1>
         <div className="container-fluid">
           <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1">
-            {dipArts.map((art) => {
+            {dipArts.map((art, index) => {
               return (
                 <div
                   className="col pb-3"
@@ -151,6 +152,7 @@ const Art = () => {
                   }}
                   data-bs-toggle="modal"
                   data-bs-target="#imgmodal"
+                  key={`b-${index}`}
                 >
                   <div
                     className="art-col "

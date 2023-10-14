@@ -16,8 +16,7 @@ const NavBar = () => {
           <ul className="navbar-nav fs-5">
             <li className={artnav}>
               <Link to="/art">
-                <a
-                  href="#"
+                <span
                   className="nav-link artnav"
                   onClick={() => {
                     setArtNav("nav-item active");
@@ -25,13 +24,12 @@ const NavBar = () => {
                   }}
                 >
                   My Art
-                </a>
+                </span>
               </Link>
             </li>
             <li className={tosnav}>
               <Link to="/tos">
-                <a
-                  href="#"
+                <span
                   className="nav-link tosnav"
                   onClick={() => {
                     setArtNav("nav-item");
@@ -39,14 +37,14 @@ const NavBar = () => {
                   }}
                 >
                   Commissions TOS
-                </a>
+                </span>
               </Link>
             </li>
           </ul>
         </div>
         <div className="container">
           <Link to="/">
-            <a
+            <span
               className="navbar-brand mx-auto"
               href="#"
               onClick={() => {
@@ -55,7 +53,7 @@ const NavBar = () => {
               }}
             >
               <img src={logo} alt="" width="100" />
-            </a>
+            </span>
           </Link>
         </div>
         <div className="container">
@@ -106,16 +104,12 @@ const NavBar = () => {
           <ul className="navbar-nav pt-3 fs-5">
             <li className="nav-item">
               <Link to="/art">
-                <a href="" className="nav-link">
-                  My Art
-                </a>
+                <span className="nav-link">My Art</span>
               </Link>
             </li>
             <li>
               <Link to="/tos">
-                <a href="" className="nav-link">
-                  Commissions TOS
-                </a>
+                <span className="nav-link">Commissions TOS</span>
               </Link>
             </li>
             <li className="d-flex flex-row justify-content-center pt-3">
