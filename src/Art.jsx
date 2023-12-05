@@ -13,15 +13,25 @@ import Art11 from "./assets/art-11.png";
 import Art12 from "./assets/art-12.png";
 import Art13 from "./assets/art-13.png";
 import Art14 from "./assets/art-14.png";
+import Art15 from "./assets/art-15.jpg";
+import Art16 from "./assets/art-16.png";
 import DP1 from "./assets/dp-1.png";
 import DP2 from "./assets/dp-2.png";
 import DP3 from "./assets/dp-3.png";
 import DP4 from "./assets/dp-4.png";
 import DP5 from "./assets/dp-5.png";
 import DP6 from "./assets/dp-6.png";
+import DP7 from "./assets/dp-7.png";
+import DP8 from "./assets/dp-8.png";
 
 const Art = () => {
   const allArts = [
+    {
+      src: Art15,
+    },
+    {
+      src: Art16,
+    },
     {
       src: ochome,
     },
@@ -83,7 +93,10 @@ const Art = () => {
       src: DP5,
     },
     {
-      src: DP6,
+      src: DP7,
+    },
+    {
+      src: DP8,
     },
   ];
 
