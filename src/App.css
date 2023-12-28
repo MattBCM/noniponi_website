@@ -96,15 +96,29 @@
   }
 }
 
-.artnav,
-.tosnav {
+.tosnav,
+.artnav {
   transition: 0.5s;
 }
 
-.artnav:hover,
-.tosnav:hover {
+.tosnav:hover,
+.artnav:hover {
   color: black;
   letter-spacing: 1px;
+}
+
+.comm-btn {
+  color: white;
+  border-radius: 20px;
+  background-color: #38a644;
+  box-shadow: 0px 1px 5px #999;
+  transition: 0.5s;
+}
+.comm-btn:hover {
+  color: white;
+  background-color: #2e8138;
+  cursor: pointer;
+  box-shadow: 0px 1px 10px #999;
 }
 
 .art-col {

@@ -40,6 +40,11 @@ const NavBar = () => {
                 </span>
               </Link>
             </li>
+            <li>
+              <a href="https://artistree.io/noniponi" target="_blank">
+                <span className="nav-link comm-btn">Commission Me Here</span>
+              </a>
+            </li>
           </ul>
         </div>
         <div className="container">
@@ -111,6 +116,13 @@ const NavBar = () => {
               <Link to="/tos">
                 <span className="nav-link">Commissions TOS</span>
               </Link>
+            </li>
+            <li className="d-flex justify-content-center align-items-center">
+              <div className="w-50">
+                <a href="https://artistree.io/noniponi" target="_blank">
+                  <span className="nav-link comm-btn">Commission Me Here</span>
+                </a>
+              </div>
             </li>
             <li className="d-flex flex-row justify-content-center pt-3">
               <a
